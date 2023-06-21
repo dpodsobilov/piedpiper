@@ -1,1 +1,1 @@
-export * from './PiperNetPicStyled';
+export * from './PiperNetPic';

@@ -1,5 +1,5 @@
 import React from "react";
 
-export interface PiperNetPicProps {
+export interface TextWrapperTypes {
     children?: React.ReactNode;
 }
