@@ -2,7 +2,7 @@ import React from 'react';
 import { ProblemStyled } from './ProblemStyled';
 import {H1} from "../../../styles/H1";
 import {P} from "../../../styles/P";
-import TextWrapper from "./TextWrapper/TextWrapper";
+import TextWrapper from "../TextWrapper/TextWrapper";
 import {BoldText} from "../../../styles/BoldText";
 
 export default function Problem() {
