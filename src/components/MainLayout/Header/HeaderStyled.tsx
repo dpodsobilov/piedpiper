@@ -6,7 +6,7 @@ export const HeaderStyled = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   height: 7vh;
   background: #007765;
 `;
