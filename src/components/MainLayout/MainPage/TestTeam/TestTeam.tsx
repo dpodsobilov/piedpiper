@@ -11,10 +11,12 @@ import { P } from '../../../styles/P';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#ddd',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
+    // ...theme.typography.body2,
+    padding: theme.spacing(0.5),
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    display: 'flex',
+    justifyContent: 'center'
   }));
 
 export default function TestTeam(props: TeamProps) {
@@ -23,19 +25,18 @@ export default function TestTeam(props: TeamProps) {
             <TextWrapper>
             <H1 primary={false}>The Team</H1>
             <Grid container spacing={10}>
-                <Grid item xs={4}>
-                    <Item><MemberImage imageUrl={props.team[0].imageUrl}></MemberImage></Item>
-                    <Item><P>{props.team[0].memberName}</P></Item>
-                </Grid>
-                <Grid item xs={4}>
-                    <Item>xs=4</Item>
-                </Grid>
-                <Grid item xs={4}>
-                    <Item>xs=4</Item>
-                </Grid>
-                <Grid item xs={8}>
-                    <Item>xs=8</Item>
-                </Grid>
+                {props.team.map(member => (
+                    <Grid item xs={4}>
+                        <Item>
+                            <MemberImage imageUrl={member.imageUrl}/>
+                        </Item>
+                        <Item>
+                        <P>
+                            {member.memberName}
+                        </P>
+                    </Item>
+                    </Grid>
+                ))}
             </Grid>
             </TextWrapper>
       </TestTeamStyled>

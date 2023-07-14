@@ -1,11 +1,11 @@
 import styled from "styled-components";
+import img from './../../../../asserts/team/image-bertram.png'
 
 export const MemberImage = styled.div<{ imageUrl: String }>`
-    background-image: url({imageUrl});
+    background: ${props => `url(${props.imageUrl}) no-repeat center`};
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 50%;
     width: 7vw;
+    margin-top: 1vh;
     aspect-ratio: 1;
 `;
