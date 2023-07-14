@@ -1,6 +1,7 @@
 export type Member = {
-    memberName: String,
-    imageUrl: String
+    memberName: string,
+    imageUrl: string,
+    position: string,
 }
 
 export interface TeamProps {
