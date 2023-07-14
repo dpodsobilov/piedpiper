@@ -1,5 +1,5 @@
 import React from 'react';
-import { TestTeamStyled } from './TestTeamStyled';
+import { TestTeamStyled } from './TeamStyled';
 import Grid from '@mui/material/Grid';
 import { H1 } from '../../../styles/H1';
 import TextWrapper from '../TextWrapper/TextWrapper';

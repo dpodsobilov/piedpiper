@@ -4,7 +4,7 @@ import PiperNetPic from "./PiperNetPic/PiperNetPic";
 import Problem from "./Problem/Problem";
 import NetworkPic from "./NetworkPic/NetworkPic";
 import Introducing from "./Introducing/Introducing";
-import TestTeam from './TestTeam/Team';
+import TestTeam from './Team/Team';
 const images = require.context('../../../asserts/team', true);
   
 const imageList = images.keys().map(image => images(image));

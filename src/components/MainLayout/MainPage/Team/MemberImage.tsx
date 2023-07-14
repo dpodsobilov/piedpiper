@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import img from './../../../../asserts/team/image-bertram.png'
 
 export const MemberImage = styled.div<{ imageUrl: String }>`
     background: ${props => `url(${props.imageUrl}) no-repeat center`};
