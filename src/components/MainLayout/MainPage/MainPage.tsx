@@ -5,6 +5,7 @@ import Problem from "./Problem/Problem";
 import NetworkPic from "./NetworkPic/NetworkPic";
 import Introducing from "./Introducing/Introducing";
 import TestTeam from './Team/Team';
+import Footer from './Footer/Footer';
 const images = require.context('../../../asserts/team', true);
   
 const imageList = images.keys().map(image => images(image));
@@ -25,6 +26,7 @@ export default function MainPage() {
           <NetworkPic />
           <Introducing />
           <TestTeam team={team} />
+          <Footer />
       </MainPageStyled>
     );
 }
